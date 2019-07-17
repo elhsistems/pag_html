@@ -1,0 +1,3 @@
+# pag_html
+this is our second page with a responsive design ...
+using bootstrap and materalize.css
