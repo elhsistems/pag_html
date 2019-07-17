@@ -1,0 +1,41 @@
+.footer{
+	background-color: #8BCAE8;
+	height: auto;
+	width: auto;
+	font-size: 10px;
+	font-style: italic;
+	border-radius: 15px;
+	line-height: 1em;
+}
+.header{
+	padding: 0;
+	width: 100%;
+	min-height: 0;
+	min-width: 0;
+	height: 500px;
+	position: relative;
+}
+h1{
+	letter-spacing: 0.1em;
+	font-weight: 100;
+	top: 10%;
+	position: absolute;
+	width: 100%;
+	color: white;
+	text-align: center !important;
+}
+h2{
+	color: #8BCAE8;
+	text-align: center !important;
+	
+}
+#enlaces{
+	text-align: center;
+}
+.container{
+	font-size: 15px;
+}
+.hospital{
+	color: #FFFFFF;
+	text-align: center !important;
+}

@@ -1,0 +1,44 @@
+
+.footer{
+	background-color: #8BCAE8;
+	height: auto;
+	width: auto;
+	font-size: 10px;
+	font-style: italic;
+	border-radius: 15px;
+	line-height: 1em;
+}
+#item{
+	text-align: center;
+	font-style: normal;
+
+}
+
+iframe{
+	border:0;
+	height: 710px;
+	width: 270px;
+	
+}
+
+.card-panel{
+	height: 70%;
+}
+.header{
+	width: 100%;
+	height: auto;	
+}
+.container-fluid{
+	text-align: center;
+	align-items: center;
+}
+#sep_fechas{
+	background-color: #02FAFF;
+	padding-top: 0;
+	padding-bottom: 15;
+}
+#sep_sept{
+	background-color: #D23BFF;
+	padding-top: 0;
+	padding-bottom: 15;
+}

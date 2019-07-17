@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>arrow</title>
+	<script>/*
+		var x = function(a){
+			return a;
+		}
+		console.log(x("hola"));
+			*/
+		//fat arrow
+		/*var x = a => a;
+		
+		console.log(x("hola"));*/
+
+		// fat arrow con varios parametros
+		/*
+		var x = (a,b) => a +" " + b;
+		console.log("Hola", "crayola");*/
+
+		// fat arrow sin varios parametros
+		/*
+		var x = () => " hola cara de bola ";
+		console.log(x());*/
+
+		//llamar a la fnuncion desde otra funcion
+		//setTimeout(()=>alert("hola, desde ES6"),1000);
+		/*
+		var x = () =>{ a ="hola"; b = "cara de bola"; alert( a +" " + b);}
+		x();*/
+
+		/*function* rango(inicio, fin, incremento){
+			while(inicio < fin){
+				yield inicio
+				inicio += incremento
+			}
+		}
+		for (let i of rango (0,10,2)){
+			console.log(i)
+		}*/
+		/*function* cuadrados(){
+			var n = 1;
+			while(true){
+				var c = n*n;
+				n++;
+				yield c;
+			}
+		}
+		var gen = cuadrados();
+		console.log(gen);
+		console.log(gen.next().value);
+		console.log(gen.next().value);
+		console.log(gen.next().value);
+		console.log(gen.next().value);*/
+
+		/*function cambiaFondo(elemento, color = "yellow"){
+			var cuadro = document.getElementById(elemento);
+			cuadro.style.backgroundColor = color;
+		}
+		window.onload = function(){
+			//cambiaFondo("cuadro");
+			//cambiaFondo("cuadro",undefined);
+			cambiaFondo("cuadro",'blue');
+		}*/
+
+		/*function agregar (valor, arreglo = []){
+			arreglo.push(valor);
+			return arreglo;
+		}
+		console.log(agregar(1));
+		console.log(agregar(2));*/
+		
+		/*function llamarAlgo(cosa = algo()){ return cosa;}
+		function algo(){
+			return Math.floor(Math.random()*10);
+		}
+		console.log(llamarAlgo());*/
+
+		/*function prueba(){
+			if(true){
+				let x = 10;
+				console.log(x);
+			}
+			//console.log(x);
+		}
+		prueba();
+
+		const x = 30;
+		console.log(x);
+		x=1;
+		console.log(x);*/
+
+		/*var s1 = `esto es una cadena`;
+		console.log(s1);
+		var n = 10;
+		var nombre = "wildo grimm";
+		var s2 = `mi nombre es ${nombre}, y tengo ${n} años`;
+		console.log(s2);
+		var n = 30;
+		var nombre = "waldo masrt";
+		var s2 = `mi nombre es 
+		${nombre}, y tengo 
+		${n} años`;
+		alert(s2);*/
+
+		/*var sim1 = Symbol();
+		var sim2 = Symbol("foo");
+		var sim3 = Symbol("foo");
+
+		console.log(Symbol("foo") === Symbol("foo"));*/
+
+		/*var sim = Symbol("foo");
+		console.log(typeof sim);
+		var simObj = Object(sim);
+		console.log(typeof simObj);*/
+
+		/*const foo = Symbol();
+		const bar = Symbol();
+		console.log(typeof foo);
+		console.log(typeof bar);*/
+
+		/*const foo = Symbol();
+		const bar = Symbol();
+		let obj = {};
+		obj[foo] = "foo";
+		obj[bar] = "bar";
+		console.log(JSON.stringify(obj));
+		console.log(Object.keys(obj));
+		console.log(Object.getOwnPropertyNames(obj));
+		console.log(Object.getOwnPropertySymbols(obj));	*/
+
+
+		/*const COLOR_RED = Symbol("red");
+		const COLOR_ORANGE = Symbol("orange");
+		const COLOR_YELLOW = Symbol("yellow");
+		const COLOR_GREEN = Symbol("green");
+		const COLOR_BLUE = Symbol("blue");
+		const COLOR_VIOLET = Symbol("violet");
+		function complemento (color){
+			switch(color){
+				case COLOR_RED:
+					return COLOR_RED;
+					break;
+				case COLOR_ORANGE:
+					return COLOR_ORANGE;
+					break;
+				case COLOR_YELLOW:
+					return COLOR_YELLOW;
+					break;
+				case COLOR_GREEN:
+					return COLOR_GREEN;
+					break;
+				case COLOR_BLUE:
+					return COLOR_BLUE;
+					break;
+				case COLOR_VIOLET:
+					return COLOR_VIOLET;
+					break;
+				default: 
+					throw new Exception('Unkown color: '  +color);
+			}
+		}
+		console.log(complemento(COLOR_RED));*/
+
+		/*var a = 0b111110111;
+		console.log(a);
+		var b = 0o767;
+		console.log(b);*/
+
+
+		/*var s = new Set();
+		s.add("cadena1").add("cadena2").add("cadena1");
+		console.log(s.size === 2);
+		console.log(s.has("hola"));*/
+
+
+		/*var m = new Map();
+		m.set("hola", 42);
+		m.set("a", 34);
+		console.log(m.get("a"));*/
+
+
+		/*let foo = ['uno', 'dos', 'tres'];
+		let [one, two, three] = foo;
+		console.log(one);*/
+
+		/*let modulo = {
+			cuadrado(lon){console.log(lon*lon);},
+			circulo(radio){console.log(radio*Math.PI);},
+			texto(text){console.log(text);},
+
+		};
+		let {cuadrado, texto, circulo} = modulo;
+		cuadrado (5);
+		texto("hola");
+		circulo(10);*/
+
+		let juana = { nombre: 'juana', paterno: 'perez'};
+		let juan = { nombre: 'juan', paterno: 'lopez', materno: 'perez'}
+		function nombreCompleto({nombre, paterno, materno = 'N/A'}){
+			console.log(`Hola ${nombre} ${paterno} ${materno}`);
+		}
+		nombreCompleto(juana);
+		nombreCompleto(juan);
+ 
+
+
+	</script>
+	<style>
+		#cuadro{
+			width:100px;
+			height: 100px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id="cuadro"></div>
+</body>
+</html>

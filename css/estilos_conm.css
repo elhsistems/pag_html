@@ -1,0 +1,16 @@
+.container{
+	padding: auto;
+	margin: auto;
+}
+.footer{
+	background-color: #8BCAE8;
+	height: auto;
+	width: auto;
+	font-size: 10px;
+	font-style: italic;
+	border-radius: 15px;
+	line-height: 1em;
+}
+.bnt{
+	text-align: center;
+}
